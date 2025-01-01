@@ -1,11 +1,11 @@
-﻿using Business.Models;
+﻿using Business.Factories;
 
-namespace MainApp.Tests.Models;
+namespace MainApp.Tests.Factories;
 
-public class Contact_Tests
+public class ContactFactory_Tests
 {
     [Fact]
-    public void Contact_ShouldInitializeCorrectly()
+    public void CreateContact_ShouldReturnValidContact()
     {
         // Arrange
         var firstName = "Johan";
@@ -17,16 +17,7 @@ public class Contact_Tests
         var city = "Hässleholm";
 
         // Act
-        var contact = new Contact
-        {
-            FirstName = firstName,
-            LastName = lastName,
-            Email = email,
-            Phone = phone,
-            Address = address,
-            PostalCode = postalCode,
-            City = city
-        };
+        var contact = ContactFactory.CreateContact(firstName, lastName, email, phone, address, postalCode, city);
 
         // Assert
         Assert.Equal(firstName, contact.FirstName);
