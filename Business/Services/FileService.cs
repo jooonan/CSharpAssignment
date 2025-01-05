@@ -38,7 +38,7 @@ public class FileService : IFileService
         try
         {
             if (!File.Exists(_filePath))
-                return new List<Contact>();
+                return [];
 
 
             var json = File.ReadAllText(_filePath);
@@ -48,7 +48,7 @@ public class FileService : IFileService
         catch (Exception ex)
         {
             Console.WriteLine($"Error loading from file: {ex.Message}");
-            return new List<Contact>();
+            return [];
         }
     }
 }
