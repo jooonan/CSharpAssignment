@@ -3,7 +3,8 @@ using Business.Services;
 
 namespace MainApp.Tests.Services;
 
-public class FileServiceTests
+/* Test for saving and loading contacts to and from file */
+public class FileService_Tests
 {
     private const string TestFilePath = "test_contacts.json";
 
@@ -27,7 +28,7 @@ public class FileServiceTests
         Assert.Equal(contacts[0].FirstName, loadedContacts[0].FirstName);
         Assert.Equal(contacts[1].Email, loadedContacts[1].Email);
 
-        // Cleanup
+        // ChatGPT recommended to delete the test file after the test
         if (File.Exists(TestFilePath))
         {
             File.Delete(TestFilePath);

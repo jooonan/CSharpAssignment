@@ -2,6 +2,7 @@
 
 namespace MainApp.Tests.Models;
 
+/* Test to make sure class initializes and stores the different data for a contact */
 public class Contact_Tests
 {
     [Fact]

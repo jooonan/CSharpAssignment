@@ -3,7 +3,8 @@ using Business.Services;
 
 namespace MainApp.Tests.Services;
 
-public class ContactServiceTests
+/* Test to make sure ContactService manages list of contacts correctly */
+public class ContactService_Tests
 {
     [Fact]
     public void AddContact_ShouldAddContactToList()

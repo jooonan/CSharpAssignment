@@ -2,6 +2,7 @@
 
 namespace MainApp.Tests.Factories;
 
+/* Test to make sure a contat object is correctly created with the designated data */
 public class ContactFactory_Tests
 {
     [Fact]
