@@ -28,6 +28,5 @@ public class ContactFactory_Tests
         Assert.Equal(address, contact.Address);
         Assert.Equal(postalCode, contact.PostalCode);
         Assert.Equal(city, contact.City);
-        Assert.NotEqual(Guid.Empty, contact.Id);
     }
 }

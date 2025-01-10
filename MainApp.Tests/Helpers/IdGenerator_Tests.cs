@@ -2,6 +2,7 @@
 
 namespace MainApp.Tests.Helpers;
 
+/* This test is for generating and returning an ID*/
 public class IdGenerator_Tests
 {
 

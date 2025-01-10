@@ -31,6 +31,7 @@ public class ContactService : IContactService
         return _contacts;
     }
 
+    /* This method for deleting contact using ID was made with some help of ChatGPT */
     public bool DeleteContact(Guid id)
     {
         try
