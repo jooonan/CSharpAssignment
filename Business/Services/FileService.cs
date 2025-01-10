@@ -40,6 +40,7 @@ public class FileService : IFileService
             if (!File.Exists(_filePath))
                 return [];
 
+
             var json = File.ReadAllText(_filePath);
             var contacts = JsonSerializer.Deserialize<List<Contact>>(json, _jsonSerializerOptions);
             return contacts ?? [];

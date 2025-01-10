@@ -2,8 +2,5 @@
 
 public static class IdGenerator
 {
-    public static Guid GenerateId()
-    {
-        return Guid.NewGuid();
-    }
+    public static string GenerateId() => Guid.NewGuid().ToString();
 }
